@@ -29,7 +29,7 @@ export const getFontSize = () => {
         buttonPadding: theme.spacing.unit * 1.4,
         titleHolderMarginTop: theme.spacing.unit * 6.5,
         titleHolderMarginBottom: theme.spacing.unit * 5,
-        buttonMarginTop: theme.spacing.unit * 3.5,
+        buttonMarginTop: theme.spacing.unit * 4,
         inputsMarginTop: 0,
         headerPaddingTop: theme.spacing.unit,
         titleCenterTop: 15,
