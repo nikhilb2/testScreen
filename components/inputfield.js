@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
   textInput: {
     borderColor: '#DBDBDB',
     borderWidth: 1,
-    borderRadius: theme.shape.roundedInputBorderRadius /2,
-    padding: theme.spacing.unit,
+    borderRadius: theme.shape.roundedInputBorderRadius / 1.5,
+    padding: theme.spacing.unit * 1.2,
     color: '#919191',
     fontFamily: 'heebo-medium',
     fontSize: getFontSize().input

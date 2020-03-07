@@ -32,8 +32,9 @@ const Header = () => {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    padding: theme.spacing.unit,
-    paddingBottom: theme.spacing.unit / 3,
+    paddingTop: theme.spacing.unit,
+    paddingHorizontal: theme.spacing.unit * 2,
+    paddingBottom: 0,
     display: "flex",
     flexDirection: "row",
     justifyContent: 'space-between'
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
     top: 15
   },
   progress: {
-    width: '80%',
+    width: '75%',
     height: 2,
     backgroundColor: '#007AFF'
   },

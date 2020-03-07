@@ -16,7 +16,7 @@ const Button = (props) => {
 const styles =  StyleSheet.create({
   container: {
     width: '100%',
-    padding: theme.spacing.unit * 1.5,
+    padding: theme.spacing.unit * 1.4,
     backgroundColor: theme.palette.primary.main,
     borderRadius: theme.shape.roundedInputBorderRadius
   },

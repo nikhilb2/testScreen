@@ -31,12 +31,12 @@ const styles = StyleSheet.create({
     marginBottom: -5
   },
   titleHolder: {
-    marginTop: theme.spacing.unit * 7 ,
-    marginBottom: theme.spacing.unit * 7 ,
+    marginTop: theme.spacing.unit * 6.5 ,
+    marginBottom: theme.spacing.unit * 5 ,
 
   },
   button: {
-    marginTop: theme.spacing.unit * 3
+    marginTop: theme.spacing.unit * 3.5
   }
 })
 
