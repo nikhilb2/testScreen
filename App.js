@@ -31,6 +31,7 @@ export default function App(props) {
           ...Ionicons.font,
           'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
           'heebo-medium': require('./assets/fonts/Heebo-Medium.ttf'),
+          'heebo-regular': require('./assets/fonts/Heebo-Regular.ttf'),
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service

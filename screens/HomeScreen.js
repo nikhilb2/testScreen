@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Platform, StyleSheet, Text, TouchableOpacity, View, SafeAreaView } from 'react-native';
+import theme from '../src/theme'
+import Header from '../components/header'
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Header />
+    </SafeAreaView>
   );
 }
 
@@ -17,6 +19,6 @@ HomeScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: theme.palette.primary.light,
   },
 });

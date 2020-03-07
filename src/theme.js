@@ -5,6 +5,9 @@ export default {
       main: '#0061FF',
       dark: '#000000'
     },
+    topBarButton: {
+      light: '#147AFC'
+    },
     primary1: {
       main: '#503DFF',
       contrastText: '#fff'
@@ -66,6 +69,10 @@ export default {
     h3: {
       fontSize: 16,
       fontFamily: 'heebo-medium'
+    },
+    tobBar: {
+      fontSize: 16,
+      fontFamily: 'heebo-regular'
     },
     tab: {
       fontSize: 16
