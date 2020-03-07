@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from 'react-native'
 import Input from './inputfield'
 import theme from "../src/theme";
 import { getFontSize } from '../src/utility'
-
+import Button from './button'
 const EnterEmail = () => {
 
   return(
@@ -15,6 +15,7 @@ const EnterEmail = () => {
       <Input />
       <Input />
       <Input />
+      <Button style={styles.button}/>
     </View>
   )
 }
@@ -33,6 +34,9 @@ const styles = StyleSheet.create({
     marginTop: theme.spacing.unit * 7 ,
     marginBottom: theme.spacing.unit * 7 ,
 
+  },
+  button: {
+    marginTop: theme.spacing.unit * 3
   }
 })
 
