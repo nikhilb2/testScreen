@@ -10,7 +10,7 @@ const Input = () => {
     <View style={styles.container}>
       <TextInput
         style={styles.textInput}
-        value={'name@name.com'}
+        value={'name@example.com'}
        />
     </View>
   )
