@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     padding: theme.spacing.unit,
+    paddingBottom: theme.spacing.unit / 3,
     display: "flex",
     flexDirection: "row",
     justifyContent: 'space-between'
