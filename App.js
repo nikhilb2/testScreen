@@ -32,6 +32,7 @@ export default function App(props) {
           'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
           'heebo-medium': require('./assets/fonts/Heebo-Medium.ttf'),
           'heebo-regular': require('./assets/fonts/Heebo-Regular.ttf'),
+          'sfPro-semi': require('./assets/fonts/SFProText-Semibold.ttf'),
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service
