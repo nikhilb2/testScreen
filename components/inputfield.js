@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     borderColor: '#DBDBDB',
     borderWidth: 1,
     borderRadius: theme.shape.roundedInputBorderRadius / 1.5,
-    padding: theme.spacing.unit * 1.2,
+    padding: getFontSize().inputPadding,
     color: '#919191',
     fontFamily: 'heebo-medium',
     fontSize: getFontSize().input,
