@@ -16,7 +16,7 @@ const EnterEmail = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: theme.spacing.unit
+    paddingHorizontal: theme.spacing.unit * 3
   }
 })
 

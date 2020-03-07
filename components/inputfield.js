@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, TextInput, Dimensions } from "react-native";
 import theme from "../src/theme";
-
+import { getFontSize } from '../src/utility'
 
 
 const Input = () => {
@@ -23,10 +23,12 @@ const styles = StyleSheet.create({
     borderRadius: theme.shape.roundedInputBorderRadius /2,
     padding: theme.spacing.unit,
     color: '#919191',
-    fontFamily: 'heebo-medium'
+    fontFamily: 'heebo-medium',
+    fontSize: getFontSize().input
+
   },
   container: {
-    padding: theme.spacing.unit
+    paddingTop: theme.spacing.unit * 1.5
   }
 })
 
