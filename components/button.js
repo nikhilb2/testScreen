@@ -3,6 +3,7 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 import theme from '../src/theme'
 import { getFontSize } from '../src/utility'
 
+
 const Button = (props) => {
   const { style } = props
   return(
@@ -16,7 +17,7 @@ const Button = (props) => {
 const styles =  StyleSheet.create({
   container: {
     width: '100%',
-    padding: theme.spacing.unit * 1.4,
+    padding: getFontSize().buttonPadding,
     backgroundColor: theme.palette.primary.main,
     borderRadius: theme.shape.roundedInputBorderRadius
   },

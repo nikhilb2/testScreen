@@ -1,9 +1,12 @@
 import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, Dimensions } from 'react-native'
 import Input from './inputfield'
 import theme from "../src/theme";
 import { getFontSize } from '../src/utility'
 import Button from './button'
+
+const { height } = Dimensions.get('window')
+
 const EnterEmail = () => {
 
   return(
@@ -12,17 +15,19 @@ const EnterEmail = () => {
         <Text style={styles.title}>Who would you like to</Text>
         <Text style={styles.title}>invite first to join your team?</Text>
       </View>
-      <Input />
-      <Input />
-      <Input />
-      <Button style={styles.button}/>
+      <View style={styles.inputs}>
+        <Input />
+        <Input />
+        <Input />
+        <Button style={styles.button}/>
+      </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: theme.spacing.unit * 3
+    paddingHorizontal: theme.spacing.unit * 3.5
   },
   title: {
     fontFamily: 'heebo-medium',
@@ -31,12 +36,15 @@ const styles = StyleSheet.create({
     marginBottom: -5
   },
   titleHolder: {
-    marginTop: theme.spacing.unit * 6.5 ,
-    marginBottom: theme.spacing.unit * 5 ,
+    marginTop: getFontSize().titleHolderMarginTop ,
+    marginBottom: getFontSize().titleHolderMarginBottom ,
 
   },
   button: {
-    marginTop: theme.spacing.unit * 3.5
+    marginTop: getFontSize().buttonMarginTop
+  },
+  inputs: {
+    marginTop: getFontSize().inputsMarginTop
   }
 })
 

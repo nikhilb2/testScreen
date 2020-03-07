@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TextInput, Dimensions } from "react-native";
 import theme from "../src/theme";
 import { getFontSize } from '../src/utility'
 
+const { height } = Dimensions.get('window')
 
 const Input = () => {
 
@@ -10,7 +11,8 @@ const Input = () => {
     <View style={styles.container}>
       <TextInput
         style={styles.textInput}
-        value={'name@example.com'}
+        placeholder={'name@example.com'}
+        placeholderTextColor='#919191'
        />
     </View>
   )
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
     padding: theme.spacing.unit * 1.2,
     color: '#919191',
     fontFamily: 'heebo-medium',
-    fontSize: getFontSize().input
+    fontSize: getFontSize().input,
 
   },
   container: {

@@ -1,9 +1,9 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import theme from '../src/theme'
 import { getFontSize } from '../src/utility'
-
+const { height } = Dimensions.get('window')
 
 
 const Header = () => {
@@ -32,7 +32,7 @@ const Header = () => {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    paddingTop: theme.spacing.unit,
+    paddingTop: getFontSize().headerPaddingTop,
     paddingHorizontal: theme.spacing.unit * 2,
     paddingBottom: 0,
     display: "flex",
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   titleCenter: {
     position: 'absolute',
     width: '100%',
-    top: 15
+    top: getFontSize().titleCenterTop
   },
   progress: {
     width: '75%',
