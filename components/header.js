@@ -1,25 +1,10 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import theme from '../src/theme'
+import { getFontSize } from '../src/utility'
 
-const { width } = Dimensions.get('window')
 
-const getFontSize = () => {
-  console.log(width);
-  switch (width) {
-    case 1080:
-      return 17
-    case 750:
-      return 15
-    case 1792:
-      return 16
-    case 1125:
-      return 15
-    default:
-      return 15
-  }
-}
 
 const Header = () => {
 
@@ -67,12 +52,12 @@ const styles = StyleSheet.create({
     marginBottom: 'auto',
     marginLeft: theme.spacing.unit,
     ...theme.typography.tobBar,
-    fontSize: getFontSize()
+    fontSize: getFontSize().topBar
 
   },
   title: {
     fontFamily: 'sfPro-semi',
-    fontSize: getFontSize()
+    fontSize: getFontSize().topBar
   },
   titleHolder: {
     marginRight: 'auto',

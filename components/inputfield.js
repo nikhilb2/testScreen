@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: theme.shape.roundedInputBorderRadius /2,
     padding: theme.spacing.unit,
-    color: '#919191'
+    color: '#919191',
+    fontFamily: 'heebo-medium'
   },
   container: {
     padding: theme.spacing.unit
