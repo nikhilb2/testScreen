@@ -12,13 +12,16 @@ export const getFontSize = () => {
         title: 19,
         button: 17,
         buttonPadding: theme.spacing.unit * 1.2,
-        titleHolderMarginTop: theme.spacing.unit * 5.5,
-        titleHolderMarginBottom: theme.spacing.unit * 4,
-        buttonMarginTop: theme.spacing.unit * 3.6,
-        inputsMarginTop: theme.spacing.unit * 1.2,
+        titleHolderMarginTop: theme.spacing.unit * 6 + 2,
+        titleHolderMarginBottom: theme.spacing.unit * 3.5,
+        buttonMarginTop: 28.9 - 11.4,
+        inputsMarginTop: 144.1 + 1.5, //theme.spacing.unit * 1.2,
         headerPaddingTop: 0,
         titleCenterTop: 10,
-        inputPadding: theme.spacing.unit * 1.2
+        inputPadding: 9, //theme.spacing.unit * 1.2,
+        titleHolderMarginLeft: -2,
+        titleLetterSpacing: 0.38,
+        titleLineHeigt: 22
       }
     case 736:
       return {
@@ -33,7 +36,10 @@ export const getFontSize = () => {
         inputsMarginTop: 0,
         headerPaddingTop: theme.spacing.unit,
         titleCenterTop: 15,
-        inputPadding: theme.spacing.unit * 1.2
+        inputPadding: theme.spacing.unit * 1.2,
+        titleHolderMarginLeft: -2,
+        titleLetterSpacing: 0.42,
+        titleLineSpacing: 24
       }
     case 896:
       return {
@@ -46,9 +52,12 @@ export const getFontSize = () => {
         titleHolderMarginBottom: theme.spacing.unit * 6.5,
         buttonMarginTop: theme.spacing.unit * 4,
         inputsMarginTop: 0,
-        headerPaddingTop: theme.spacing.unit * 1.5,
-        titleCenterTop: 15,
-        inputPadding: theme.spacing.unit * 1.5
+        headerPaddingTop: theme.spacing.unit * 1.7,
+        titleCenterTop: 10,
+        inputPadding: theme.spacing.unit * 1.5,
+        titleHolderMarginLeft: -2,
+        titleLetterSpacing: 0.42,
+        titleLineSpacing: 24
       }
     case 812:
     return {
@@ -63,7 +72,10 @@ export const getFontSize = () => {
       inputsMarginTop: 0,
       headerPaddingTop: theme.spacing.unit,
       titleCenterTop: 15,
-      inputPadding: theme.spacing.unit * 1.2
+      inputPadding: theme.spacing.unit * 1.2,
+      titleHolderMarginLeft: -2,
+      titleLetterSpacing: 0.42,
+      titleLineSpacing: 24
     }
     default:
     return {
@@ -78,7 +90,10 @@ export const getFontSize = () => {
       inputsMarginTop: 0,
       headerPaddingTop: theme.spacing.unit,
       titleCenterTop: 15,
-      inputPadding: theme.spacing.unit * 1.2
+      inputPadding: theme.spacing.unit * 1.2,
+      titleHolderMarginLeft: -2,
+      titleLetterSpacing: 0.42,
+      titleLineSpacing: 24
     }
   }
 }

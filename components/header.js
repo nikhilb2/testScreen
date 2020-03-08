@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
+import { FontAwesome } from '@expo/vector-icons'
 import theme from '../src/theme'
 import { getFontSize } from '../src/utility'
 const { height } = Dimensions.get('window')
@@ -10,9 +10,10 @@ const Header = () => {
 
   return(
     <View>
+      <View style={styles.topUnusable}/>
       <View style={styles.container}>
         <TouchableOpacity style={styles.headerItems}>
-          <Ionicons style={styles.icon} name='ios-arrow-back' color={theme.palette.topBarButton.light} size={30}/>
+          <FontAwesome style={styles.icon} name='angle-left' color={theme.palette.topBarButton.light} size={35}/>
           <Text style={styles.backText}>Back</Text>
         </TouchableOpacity>
         <View style={styles.titleCenter}>
@@ -32,26 +33,34 @@ const Header = () => {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    paddingTop: getFontSize().headerPaddingTop,
-    paddingHorizontal: theme.spacing.unit * 2,
+    height: 31,
+  //  paddingTop: getFontSize().headerPaddingTop,
+    paddingHorizontal: theme.spacing.unit * 1.3,
     paddingBottom: 0,
     display: "flex",
     flexDirection: "row",
-    justifyContent: 'space-between'
-    //backgroundColor: 'yellow'
+    justifyContent: 'space-between',
+  //  backgroundColor: 'green'
+  },
+  topUnusable: {
+    width: '100%',
+    height: 24.4,
+    marginTop:-24.4,
+  //  backgroundColor: 'yellow'
   },
   icon: {
-    marginTop: 3
+  //  marginTop: 3
+  marginTop: 'auto',
+  marginBottom: 'auto '
   },
   headerItems: {
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   backText: {
     color: theme.palette.topBarButton.light,
-    marginTop: 'auto',
-    marginBottom: 'auto',
-    marginLeft: theme.spacing.unit,
+    marginTop: theme.spacing.unit,
+    marginLeft: theme.spacing.unit * .8,
     ...theme.typography.tobBar,
     fontSize: getFontSize().topBar
 
@@ -70,13 +79,13 @@ const styles = StyleSheet.create({
     top: getFontSize().titleCenterTop
   },
   progress: {
-    width: '75%',
-    height: 2,
+    width: '100%',
+    height: 2.7,
     backgroundColor: '#007AFF'
   },
   progressBarBack: {
     width: '100%',
-    height: 2,
+    height: 2.7,
     backgroundColor: '#D9D9D9'
   },
 

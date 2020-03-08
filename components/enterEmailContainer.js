@@ -13,7 +13,7 @@ const EnterEmail = () => {
     <View style={styles.container}>
       <View style={styles.titleHolder}>
         <Text style={styles.title}>Who would you like to</Text>
-        <Text style={styles.title}>invite first to join your team?</Text>
+        <Text style={styles.title2}>invite first to join your team?</Text>
       </View>
       <View style={styles.inputs}>
         <Input />
@@ -33,18 +33,34 @@ const styles = StyleSheet.create({
     fontFamily: 'heebo-medium',
     fontSize: getFontSize().title,
     textAlign: 'center',
-    marginBottom: -5
+    letterSpacing: getFontSize().titleLetterSpacing,
+    lineHeight: getFontSize().titleLineHeigt,
+  },
+  title2: {
+    fontFamily: 'heebo-medium',
+    fontSize: getFontSize().title,
+    textAlign: 'center',
+    letterSpacing: getFontSize().titleLetterSpacing,
+    lineHeight: getFontSize().titleLineHeigt,
+    marginLeft: 3
   },
   titleHolder: {
     marginTop: getFontSize().titleHolderMarginTop ,
-    marginBottom: getFontSize().titleHolderMarginBottom ,
+    // marginBottom: getFontSize().titleHolderMarginBottom ,
+    marginLeft: getFontSize().titleHolderMarginLeft
+
 
   },
   button: {
     marginTop: getFontSize().buttonMarginTop
   },
   inputs: {
-    marginTop: getFontSize().inputsMarginTop
+    marginTop: 47.6 + 1,
+    marginRight: -0.9
+    //position: 'absolute',
+    //top: getFontSize().inputsMarginTop,
+    //left: 28,
+    //right: 27.1
   }
 })
 

@@ -11,7 +11,7 @@ const Input = () => {
     <View style={styles.container}>
       <TextInput
         style={styles.textInput}
-        placeholder={'name@example.com'}
+        value={'name@example.com'}
         placeholderTextColor='#919191'
        />
     </View>
@@ -20,6 +20,7 @@ const Input = () => {
 
 const styles = StyleSheet.create({
   textInput: {
+    height: 40.7 - 0.5,
     borderColor: '#DBDBDB',
     borderWidth: 1,
     borderRadius: theme.shape.roundedInputBorderRadius / 1.5,
@@ -27,10 +28,15 @@ const styles = StyleSheet.create({
     color: '#919191',
     fontFamily: 'heebo-medium',
     fontSize: getFontSize().input,
+    letterSpacing: 0.32,
+    lineHeight: 19,
+    //paddingBottom: theme.spacing.unit
+
+
 
   },
   container: {
-    paddingTop: theme.spacing.unit * 1.5
+    marginBottom: 11.4//theme.spacing.unit * 1.5
   }
 })
 
