@@ -10,7 +10,7 @@ export default function HomeScreen() {
     <SafeAreaView style={styles.container}>
       <KeyboardAvoidingView behaviour='position'>
         <Header />
-        <EmailInput /
+        <EmailInput />
       </KeyboardAvoidingView>
     </SafeAreaView>
   );
