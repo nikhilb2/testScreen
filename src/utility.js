@@ -67,10 +67,10 @@ export const getFontSize = () => {
     }
     default:
     return {
-      topBar: 15  * .9,
-      input: 13  * .9,
-      title: 19  * .9,
-      button: 17 * .9,
+      topBar: 15,
+      input: 13,
+      title: 19,
+      button: 17,
       buttonPadding: theme.spacing.unit * 1.4,
       titleHolderMarginTop: theme.spacing.unit * 6.5,
       titleHolderMarginBottom: theme.spacing.unit * 5,
