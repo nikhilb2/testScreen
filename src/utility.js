@@ -21,7 +21,12 @@ export const getFontSize = () => {
         inputPadding: 9, //theme.spacing.unit * 1.2,
         titleHolderMarginLeft: -2,
         titleLetterSpacing: 0.38,
-        titleLineHeigt: 22
+        titleLineHeigt: 22,
+        headerContainer: {
+          width: '100%',
+          height: 37.05,
+          position: 'relative'
+        }
       }
     case 736:
       return {
@@ -39,7 +44,12 @@ export const getFontSize = () => {
         inputPadding: theme.spacing.unit * 1.2,
         titleHolderMarginLeft: -2,
         titleLetterSpacing: 0.42,
-        titleLineSpacing: 24
+        titleLineSpacing: 24,
+        headerContainer: {
+          width: '100%',
+          height: 37.05,
+          position: 'relative'
+        }
       }
     case 896:
       return {
@@ -57,7 +67,12 @@ export const getFontSize = () => {
         inputPadding: theme.spacing.unit * 1.5,
         titleHolderMarginLeft: -2,
         titleLetterSpacing: 0.42,
-        titleLineSpacing: 24
+        titleLineSpacing: 24,
+        headerContainer: {
+          width: '100%',
+          height: 37.05,
+          position: 'relative'
+        }
       }
     case 812:
     return {
@@ -75,7 +90,12 @@ export const getFontSize = () => {
       inputPadding: theme.spacing.unit * 1.2,
       titleHolderMarginLeft: -2,
       titleLetterSpacing: 0.42,
-      titleLineSpacing: 24
+      titleLineSpacing: 24,
+      headerContainer: {
+        width: '100%',
+        height: 37.05,
+        position: 'relative'
+      }
     }
     default:
     return {
@@ -93,7 +113,12 @@ export const getFontSize = () => {
       inputPadding: theme.spacing.unit * 1.2,
       titleHolderMarginLeft: -2,
       titleLetterSpacing: 0.42,
-      titleLineSpacing: 24
+      titleLineSpacing: 24,
+      headerContainer: {
+        width: '100%',
+        height: 37.05,
+        position: 'relative'
+      }
     }
   }
 }

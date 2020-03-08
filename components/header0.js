@@ -36,10 +36,7 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   container: {
-    //marginTop: -24.4,
-    width: '100%',
-    height: 33.9 + 4.4 - 1.25,
-    position: 'relative'
+    ...getFontSize().headerContainer
   },
   headerItems: {
     position: 'absolute',
