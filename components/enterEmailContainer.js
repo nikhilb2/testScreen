@@ -1,11 +1,9 @@
 import React from 'react'
-import { Text, View, StyleSheet, Dimensions } from 'react-native'
+import { Text, View, StyleSheet } from 'react-native'
 import Input from './inputfield'
 import theme from "../src/theme";
-import { getFontSize } from '../src/utility'
+import { getStyling } from '../src/utility'
 import Button from './button'
-
-const { height } = Dimensions.get('window')
 
 const EnterEmail = () => {
 
@@ -31,36 +29,31 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: 'heebo-medium',
-    fontSize: getFontSize().title,
+    fontSize: getStyling().titleHead,
     textAlign: 'center',
-    letterSpacing: getFontSize().titleLetterSpacing,
-    lineHeight: getFontSize().titleLineHeigt,
+    letterSpacing: getStyling().titleLetterSpacing,
+    lineHeight: getStyling().titleLineHeigt,
   },
   title2: {
     fontFamily: 'heebo-medium',
-    fontSize: getFontSize().title,
+    fontSize: getStyling().titleHead,
     textAlign: 'center',
-    letterSpacing: getFontSize().titleLetterSpacing,
-    lineHeight: getFontSize().titleLineHeigt,
+    letterSpacing: getStyling().titleLetterSpacing,
+    lineHeight: getStyling().titleLineHeigt,
     marginLeft: 3
   },
   titleHolder: {
-    marginTop: getFontSize().titleHolderMarginTop ,
-    // marginBottom: getFontSize().titleHolderMarginBottom ,
-    marginLeft: getFontSize().titleHolderMarginLeft
+    marginTop: getStyling().titleHolderMarginTop ,
+    marginLeft: getStyling().titleHolderMarginLeft
 
 
   },
   button: {
-    marginTop: getFontSize().buttonMarginTop
+    marginTop: getStyling().buttonMarginTop
   },
   inputs: {
-    marginTop: 47.6 + 1,
-    marginRight: -0.9
-    //position: 'absolute',
-    //top: getFontSize().inputsMarginTop,
-    //left: 28,
-    //right: 27.1
+    ...getStyling().inputs
+
   }
 })
 

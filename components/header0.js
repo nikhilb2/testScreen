@@ -1,9 +1,9 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Image } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native'
 import { FontAwesome } from '@expo/vector-icons'
 import theme from '../src/theme'
-import { getFontSize } from '../src/utility'
-const { height } = Dimensions.get('window')
+import { getStyling } from '../src/utility'
+
 import BackBtn from '../svg/backbtn'
 
 
@@ -36,43 +36,29 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   container: {
-    ...getFontSize().headerContainer
+    ...getStyling().headerContainer
   },
   headerItems: {
     position: 'absolute',
-    height: 22,
-    left: 13.1 - 1,
-    bottom: 9.2 - 1.5,
+    ...getStyling().headerItems,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center'
   },
   icon: {
-//    backgroundColor: 'red',
-    width: 8 + 3,
-    height: 16.2 + 3 + 0.5
-    //width: 8,
-    //height: 16.2
+    ...getStyling().backIcon
   },
   backText: {
     color: theme.palette.topBarButton.light,
-    marginLeft: 8.6 - 1.5,
     ...theme.typography.tobBar,
-    fontSize: getFontSize().topBar,
+    ...getStyling().backText
   },
   title: {
-    fontFamily: 'sfPro-semi',
-    fontSize: getFontSize().topBar,
-    letterSpacing: 0.15,
-    lineHeight: 18,
-    marginLeft: 1,
-    marginBottom: .5
+    ...getStyling().title,
   },
   titleHolder: {
     position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 11.4 - 1.5,
+    ...getStyling().titleHolder,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
